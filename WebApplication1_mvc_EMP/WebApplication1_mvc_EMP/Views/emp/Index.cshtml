@@ -1,0 +1,16 @@
+﻿@model IEnumerable<WebApplication1_mvc_EMP.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="text-primary text-center">Employee List</h2>
+@foreach(var emp in Model)
+            {
+                <b>Empno:</b>@emp.empno<br />
+                <b>Name:</b>@emp.Name<br />
+                <b>Address</b>@emp.Address<br />
+                <b>Salary</b>@emp.salary<br />
+                <br />
+                <br />
+            }
+

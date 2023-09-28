@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WebApplication1_mvc_EMP.Models.Employee2>
+    <h2 class="text-info text-center ">Employee list</h2>
+<br />
+<br />
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var emp2 in Model)
+            {
+                <tr>
+                    <td>@emp2.Id</td>
+                    <td>@emp2.Name</td>
+                    <td>@emp2.Address</td>
+                    <td>@emp2.salary</td>
+                </tr>
+            }
+    </tbody>
+</table>
